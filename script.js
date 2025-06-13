@@ -29,8 +29,17 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form from submitting normally
 
-    // Base price and toppings price
-    const basePrice = 10;
+    // Get selected size and set base price
+    const sizeDropdown = document.getElementById("size");
+    const selectedSize = sizeDropdown.value;
+    let basePrice = 10; // Default base price for medium size
+    if (selectedSize === "small") {
+      basePrice = 8;
+    } else if (selectedSize === "large") {
+      basePrice = 12;
+    }
+
+    // Toppings price
     const toppingsPrice = 2;
 
     // Get selected toppings
