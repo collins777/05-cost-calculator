@@ -48,6 +48,23 @@ img {
   background: #fdf4e9;
 }
 
+.delivery-label {
+  display: block;
+  margin: 15px 0;
+  padding: 12px;
+  background: white;
+  border: 2px solid #d63600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #5c3118;
+  text-align: center;
+}
+
+.delivery-label:hover {
+  background: #fdf4e9;
+}
+
 #total {
   font-size: 32px;
   margin-top: 22px;
@@ -77,12 +94,13 @@ body {
   min-height: 100vh;
   margin: 0;
   color: #5c3118;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 40px 20px;
 }
 
-h1, h2 {
-  font-family: 'Pacifico', cursive;
+h1,
+h2 {
+  font-family: "Pacifico", cursive;
   letter-spacing: 2px;
 }
 
@@ -93,5 +111,5 @@ h1 {
 }
 
 p {
-  font-size: 19.2px; 
+  font-size: 19.2px;
 }
